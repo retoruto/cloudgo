@@ -24,19 +24,18 @@
 找到main函数并运行：
 ![这里写图片描述](http://img.blog.csdn.net/20171106124721005?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzY4MTY5MTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
-</br>
 test ip：
 打开浏览器输入：
 ![这里写图片描述](http://img.blog.csdn.net/20171106124903812?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzY4MTY5MTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
-</br>
+
 可以看到监听到了网页请求的信息。
-</br>
+
 test curl
 打开另一个终端输入：
 `curl -v http://localhost:9090/hello/world`
 ![这里写图片描述](http://img.blog.csdn.net/20171106125348811?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzY4MTY5MTI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 也可以监听到了。
-</br>
+
 test ab
 打开另一个终端输入：
 `ab -n 1000 -c 100 http://localhost:9090/hello/world`
